@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <!-- p.28 -->
+        <!-- 무료사진/음악/영상 : https://pixabay.com/ko-->
+    <img src="사진.jpg" />                          <br/>
+
+    <audio src="오디오.mp3" controls ></audio>        <br/>
+        <!-- 
+            audio 태그 속성
+                src     : 오디오파일 경로
+                controls : 음악재생 도구 출력
+                autoplay : 자동실행
+                loop     : 반복재생
+        -->
+    <audio controls > <!-- 여러개의 오디오 넣을때 -->
+        <source src="오디오.mp3" />
+        <source src="오디오.mp3" />
+        <source src="오디오.mp3" />
+    </audio>                                             <br/>
+
+    <video src="영상.mp4" controls autoplay muted width="500px" height="500px"></video>                      <br/>
+     <!-- 
+            video 태그 속성
+                src         : 비디오 파일 경로
+                controls    : 음악재생 도구 출력
+                width       : 가로사이즈 
+                height      : 세로사이즈
+                autoplay    : 자동실행 [ 최근부터 브라우저 정책 때문에 금지 단)소리끄면(muted) 가능 ]
+                muted       : 음소거
+        -->
+
+
+
+</body>
+</html>
