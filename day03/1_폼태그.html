@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <!-- p.22 폼(양식,틀,형태) 양식 태그  -->
+    <form> <!-- 폼 시작 -->
+        입력상자 :          <input type="text" />       <br/>
+        숨겨진입력상자 :    <input type="hidden" />     <br/>
+        패스워드입력 :      <input type="password" />    <br/>
+        라디오버튼(단일선택) : 
+            <input type="radio" name="운동시간" /> 매일 1~2시간
+            <input type="radio" name="운동시간" /> 일주일에 3시간이하
+            <input type="radio" name="운동시간" /> 일주일에 3시간이상   <br/>
+        체크박스(복수선택) : 
+            <input type="checkbox" name="관심사" /> 스포츠,연예
+            <input type="checkbox" name="관심사"/> 정치,경제
+            <input type="checkbox" name="관심사"/> 기타                  <br/>
+
+        <!-- submit/reset/button 버튼의 작성된 내용 변경할때는 value 속성 -->
+        (폼)전송버튼 : <input type="submit" value="전송하기" />          <br/>
+        (폼)리셋버튼 : <input type="reset" value="다시쓰기" />           <br/>
+
+        파일첨부 : <input type="file" />                                 <br/>
+        일반버튼 : <input type="button" value="일반버튼" />                 <br/>
+        검색창 : <input type="search" />                                 <br/>
+
+        <!-- type="text" 차이는 없어보이지만 HTML 인식차이-->
+        전화번호 : <input type="tel" />                                  <br/>
+        <!-- 폼 전송시 인터넷주소 형식 검사. -->
+        홈페이지주소입력 : <input type="url" />                           <br/>
+         <!-- 폼 전송시 이메일 형식 검사. -->
+        이메일입력 : <input type="email" />                              <br/>
+
+        숫자입력 : <input type="number" />  <br/>
+        범위스크롤입력 : <input type="range"/> <br/>
+        
+    </form> <!-- 폼 끝 -->
+</body>
+</html>
