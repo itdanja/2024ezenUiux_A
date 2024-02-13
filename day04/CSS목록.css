@@ -1,0 +1,17 @@
+li{
+    /* 글머리 */
+    list-style-type: disc;      /* 원형 */
+    list-style-type: square;    /* 네모 */
+    list-style-type: decimal;   /* 숫자 */
+    list-style-type: lower-roman; /* 로마 소문자 */
+    list-style-type: upper-roman; /* 로마 대문자 */
+    list-style-type: lower-alpha; /* 알파벳 소문자 */
+    list-style-type: upper-alpha; /* 알파벳 대문자 */
+    list-style-type: none;
+    
+    /* list-style-image: url("이미지파일"); */
+    list-style-position: inside;  /* 글머리 들여쓰기 */
+    list-style-position: outside; /* 기본값 : 글머리 들여쓰기X */
+    
+
+}
