@@ -1,0 +1,10 @@
+
+h3{ color:green; }
+
+/* class 선택자일때 .(점)*/
+.a{ color: yellow;}
+.b{ color: skyblue; }
+.c{ font-size: 20px;}
+
+/* id 선택자일때 #(샵) */
+#d{ color: green;}
