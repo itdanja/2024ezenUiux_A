@@ -1,0 +1,83 @@
+
+/* 
+    누구를{ 어떻게 : 변경할값; }
+        1. 누구를/선택자
+            1.마크업명 2.class 3.id
+    텍스트 관련 스타일  속성 
+        1. font-family : 글꼴(PC에 설치가 된 글꼴 - 별도 설치 O)
+            - 웹폰트( 인터넷 이용한 웹으로부터 글꼴 - 별도 설치 X)
+            - 폰트/글꼴 : 상업적으로 저작권
+                - 상업적으로 무료 폰트
+                    1. 구글폰트 : https://fonts.google.com/
+                    2. 눈누 : https://noonnu.cc/
+
+        2. font-size            : 글꼴 크기
+        3. font-weight          : 글꼴 굵기
+        4.font-style            : 글꼴 기울기
+        5.direction             : 글꼴 작성 방향 
+        6.text-align            : 글꼴 가로수평 정렬 
+        7.text-indent           : 들여쓰기
+        8.text-transform        : 대소문자로 자동 변환
+        9letter-spacing         : 자간
+        10. word-spacing        : 어간
+        11. line-height         : 줄간격
+        12 text-decoration      : 밑줄
+        
+*/
+h3{ font-family: "바탕체","굴림체"; }
+
+@font-face { /* 1.눈누 홈페이지 원하는 폰트의 웹폰트 코드 복사/붙여녛기 */
+    font-family: 'TTHakgyoansimMonggeulmonggeulR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimMonggeulmonggeulR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 2. 웹폰트 적용하기 */
+h2{ font-family: 'TTHakgyoansimMonggeulmonggeulR' ;}
+
+/* 2. 글꼴크기 px픽셀 : 고정크기 */
+p{ font-size: 12px ;}
+
+/* .class명{ 속성명 : 값 } */
+.teacher_name{ 
+    font-size: 10px;
+    /* 3. 글꼴의 굵기 */
+    /* font-weight: bold; */    /* 진하게 */
+    /* font-weight: lighter; */ /* 조금 연하게 */
+    /* font-weight: bolder; */  /* 조금 진하게 */
+    font-weight: 900;           /* 100~900 400보통 900진하게*/
+
+    /* 4. 글꼴 기울이기 */
+    font-style: italic;         /* 기울기 */
+
+    /* 5. 텍스트의 쓰기 방향 지정 */
+    /*direction: ltr;*/         /* 왼쪽부터 작성 */
+    /*direction: rtl;*/             /* 오른쪽부터 작성 */
+
+    /* 6. 텍스트의 수평 정렬 */
+    text-align: left;          /* 왼쪽 정렬 */    
+    /*text-align: right;*/          /* 오른쪽 정렬 */
+    /*text-align: center*/;         /* 가운데 정렬 */
+
+    /* 7. 텍스트 들여쓰기 */
+    text-indent: 20px;
+
+    /* 8. 텍스트 대소문자로 변환하기  */
+    text-transform: capitalize; /* 첫글자를 대문자로 변환 */
+    text-transform: uppercase;  /* 대문자로 변환 */
+    text-transform: lowercase;  /* 소문자로 변환 */
+    text-transform: none;       /* 변환없음 */
+
+    /* 9. 자간 : 글자와 글자 사이의 간격 */
+    letter-spacing: 5px;
+    /* 10. 어간 : 단어와 단어 사이의 간격
+    word-spacing: 12px;
+    /* 11. 줄간격 : 주로 160~180% 사이 */
+    line-height: 180%;
+    /* 12. 밑줄 : 밑줄,취소선,윗줄 */
+    text-decoration: underline; /*밑줄*/
+    text-decoration: line-through; /* 취소선 */
+    text-decoration: overline;  /* 윗줄*/
+    text-decoration: none; /* 없음 */
+
+}
