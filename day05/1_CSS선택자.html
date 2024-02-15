@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- 외부 CSS파일 호출 <link href="css파일경로"> -->
+    <link rel='stylesheet'  
+            type='text/css' 
+            media='screen'  
+            href='CSS선택자.css'>
+</head>
+<body>
+
+    body 구역 <br/>
+    F12 : 브라우저(크롬/엣지) 개발자도구창
+    <h1> h1 구역 </h1>
+    <h1 class="box1"> h1 구역 </h1>
+    <h1 class="box1 box2"> h1 구역 </h1>
+    <h1 id="box3" class="box1"> h1 구역 </h1>
+    
+    <h2> h2 구역 </h2>
+    <!-- div(Division) 마크업 : 구역/박스 나눌때 사용 -->
+    <!-- 주로 부모 마크업(레이아웃) : div, span 마크업 사용됨-->
+
+    <div id="box5"> <!-- 할머니 -->
+        <div> <!-- 부모 -->
+            div구역 안에 있는 h1 구역 
+            <div> <!-- 손자  ( 기준 )  -->
+                div 구역 안에 h1 구역 안에 h1 구역 
+            </div>
+        </div>
+
+        <div> <!-- 부모 -->
+            div구역 안에 있는 h3 구역 
+            <div> <!-- 손자 ( 기준 )-->
+                div 구역 안에 h3 구역 안에 p 구역 
+            </div>
+        </div>
+    </div>
+
+    <div id="box6">
+        여기는 box6
+    </div>
+
+</body>
+</html>
+<!--
+- CSS 적용
+	1. 어디에 2.무엇을 3. 어떻게
+	어디에{ 무엇을 : 어떻게; } 
+	선택자{ 속성명 : 속성값; }
+		선택자 종류 	: p.60
+			1. *	모든 구역의 HTML 마크업 선택
+				*{ background-color : blue; }
+				전체구역에 배경색상을 파랑색으로 꾸미기
+
+			2. 마크업 	: 해당 HTML 마크업 선택 
+				h3{ color : red; }
+				h3 태그에 글꼴색상을 빨강색으로 꾸미기 
+
+			3. class	: 해당 class명의 속성을 갖는 HTML 마크업 선택 	[ 복수 - class는 마크업당 여러개 ]
+				.student_name{ color : green; }
+
+			4. id	: 해당 id명의 속성을 갖는 HTML 마크업 선택 	[ 단일 - id는 마크업당 1개 ]
+				#student_number{ color : black; }
+
+			- 만약에 속성이 겹칠때 우선순위
+				* < 마크업 < class < id
+			-----------------------------------------------------------
+			5. 후손 선택자 : 띄어쓰기로 구분 
+				부모선택자 후손선택자
+			6. 자손 선택자 : >
+				부모선택자 > 자손선택자
+			-----------------------------------------------------------
+			7. 여러개 선택자  : ,쉼표 로 구분 
+				선택자1 , 선택자2
+
+
+-->
+

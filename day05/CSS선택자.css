@@ -1,0 +1,27 @@
+
+/* 1. * 선택자 */
+*{ color: red ;}
+
+/* 2. 마크업 선택자 */
+h1{ color: blue; }
+
+/* 3. class 선택자 : 복수형 */
+.box1{ color: green ;}
+.box2{ background-color: pink;}
+
+/* 4. id 선택자 : 단일형  */
+#box3{ color: brown;}
+#box4{ background-color: beige; }
+
+/* 5 띄어쓰기 후손 선택자 : 하위 모든 구역  */
+#box5 div{
+    color: aqua;
+}
+/* 6. > 자손 선택자 : 바로 아래의 구역 */
+#box5 > div{ 
+    color: yellow;
+}
+/* 7. , 다수 선택자 */
+#box5 , #box6 {
+    background-color: black;
+}
