@@ -1,0 +1,90 @@
+/*
+    테두리 속성 border : 굵기 선모양 색상 
+        작성순서
+        1. 굵기         : 수치px      
+        2. 선모양
+            solid       : 실선
+            dotted      : 점선
+            double      : 이중선 
+            dashed      : 파선 
+        3. 색상 
+    border : 모든 위/아래/오른쪽/왼쪽 테두리
+    border-top : 위쪽 테두리
+    border-bottom : 아래쪽 테두리
+    border-right : 오른쪽 테두리
+    border-left : 왼쪽 테두리
+
+    둥근 모서리 속성 border-radius : 곡선크기px
+            border-radius: 20px;                : 모든 구역 테두리
+            border-radius: 50px 40px 30px 20px; :  왼쪽상단 , 오른쪽상단 , 오른쪽하단 , 왼쪽하단
+
+    안쪽여백 속성 padding
+        - 내용물 과 테두리 간격/사이
+        padding : 10px                  위/아래/오른쪽/왼쪽 10px
+        padding : 10px 20px             위/아래 10px 오른쪽/왼쪽 0px
+        padding : 10px 20px 30px 40px   위10px오른쪽20px아래쪽30px왼쪽40px
+
+        각 위치별 별도 : border-top , border-right , border-bottom , border-left
+
+    바깥여백 속성 margin
+        - 테두리 와 다음 구역 간격/사이
+        margin : 10px                  위/아래/오른쪽/왼쪽 10px
+        margin : 10px 20px             위/아래 10px 오른쪽/왼쪽 0px
+        margin : 10px 20px 30px 40px   위10px오른쪽20px아래쪽30px왼쪽40px
+
+        각 위치별 별도 : margin-top , margin-right , margin-bottom , margin-left
+        margin: 0 auto; : (가운데 배치) 자동으로 왼쪽/오른쪽 바깥여백 자동처리
+
+    구역 가로 사이즈 기준점 정하기 box-sizing
+        box-sizing : content-box;   
+            - 생략시 기본값
+            - width : content 
+
+        box-sizing: border-box;
+            - width : content + 테두리 + 안쪽여백
+*/
+.box1{
+    border : 1px solid red;
+}
+.box2{
+    border-top : 2px solid blue ; /* 위쪽 테두리 border-top */
+    border-right: 3px dotted orange; /* 오른쪽 테두리 */
+    border-bottom: 4px double red ; /* 아래쪽 테두리 */
+    border-left: 5px dashed black; /* 왼쪽 테두리 */
+}
+.box3{
+    border: solid 2px red;
+    border-radius: 20px; /* 둥근모서리 */
+}
+.box4{
+    border: solid 3px blue;
+    border-radius: 50px 40px 30px 20px; /* 왼쪽상단 , 오른쪽상단 , 오른쪽하단 , 왼쪽하단 */
+}
+.box5{
+    border: solid 5px pink; width: 100px;   /* 구역 가로 크기 */
+    padding-top: 20px;        padding-right: 30px;
+    padding-bottom: 40px;     padding-left: 50px;
+    margin-top: 50px;         margin-right: 40px;
+    margin-bottom: 30px;      margin-left: 20px;
+}
+.box6{ border: solid 5px purple;   width: 100px;
+    padding: 20px 30px 40px 50px;   /* 위 오른쪽 아래 왼쪽*/
+    margin: 50px 40px 30px 20px;    /* 위 오른쪽 아래 왼쪽*/
+}
+.box7{ border: solid 5px aquamarine; width: 100px;
+    padding: 20px 40px;         /* 위/아래 오른쪽/왼쪽*/
+    margin: 20px 40px;       /* 위/아래 오른쪽/왼쪽*/
+}
+.box8{    border: solid 5px blueviolet; width: 100px;
+    padding: 30px;          /* 위/아래/오른쪽/왼쪽 */
+    margin: 30px;           /* 위/아래/오른쪽/왼쪽 */
+}
+.box9{  border : solid 5px darkblue;
+    width: 200px; /*가로 사이즈*/
+    height: 200px; /* 세로 사이즈 */
+    /* box-sizing: content-box; */
+    box-sizing: border-box;
+
+    text-align: center ; /* 구역내 content 내용 정렬 */
+    margin: 0 auto; /* 해당 구역을 가운데 정렬 */
+}
