@@ -1,0 +1,123 @@
+/*
+    1. HTML에 <head>태그안에 CSS파일 호출한다.
+    <link rel='stylesheet' type='text/css' media='screen' href='web1.css'>
+
+    2. CSS파일에서 CSS 코드를 작성한다.
+
+    3. CSS 코드 작성법 
+
+    선택자{ 속성명 : 값 }
+    css 꾸미기 위한 선택자
+        1. *{ }         : 전체 구역 선택자 
+        2. 마크업{ }
+        3. .class명{ }
+        4. #id명{ }
+
+*/
+
+/* #wrap : HTML에서 id가 'wrap' 인 마크업 선택 */
+/* background-color : CSS속성 : CSS속성 다수존재 : 본인하고 싶은 속성  */
+/* beige : 해당하는 CSS속성의 값 : CSS속성마다 정해져 있음 */
+
+*{
+     /* 글머리 타입 : none(없음) */
+     list-style-type: none;
+    /* 모든 태그 기본값 여백 제거 */
+     padding: 0px;      margin: 0px;
+}
+#wrap{ }
+#header{ 
+    /* 내가 가로배치할 대상의 부모요소 한테 flex 요소 적용 */
+    display: flex; /* p.191 자식 요소들을 배치하는 방법 : 가로배치 */
+    justify-content: space-between; /* p.193~4 flex 사용시 자식 요소들의 배치 정렬하는 방법 : */
+    
+    width: 1280px; /* 구역 사이즈 */
+    margin: 30px auto; /* 바깥여백 : 위아래 여백0 왼쪽오른쪽 여백 자동auto : 가로 가운데정렬 */
+}
+#left_header{  }
+/* 부모선택자 > 자식선택자 vs 부모선택자 자손선택자  */
+#left_header > img{ width: 160px; }
+#right_header{  }
+
+#top_menu{ 
+    display: flex; /* 자식 요소들( li 3개 )을 가로배치  */
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    font-size: 10px; /* 글자 크기 */
+}
+#top_menu > li { 
+    margin-left: 15px ; /*왼쪽 바깥여백*/
+}
+#main_menu > li {
+    margin-left: 60px;
+}
+#main_menu{
+    display: flex; /* 자식 요소들( li 5개 )을 가로배치  */
+    font-size: 20px; /* 글자 크기 */
+    font-weight: bold; /* 글자 굵게 */
+    margin: 30px 0px;
+}
+
+#content{ 
+    display: flex; /* 자식 요소들을 배치하는 방법 : 가로배치 */
+    width: 1280px;  /* 구역 가로 길이 */
+    margin: 50px auto; /* 바깥여백 */
+}
+#side_bar{
+    width: 240px ; /* 부모 1280px 중에 사용할 사이즈*/
+}
+#side_bar > h3{
+    background-color: grey; /* 배경색 */
+    font-size: 20px;    /* 글꼴 크기 */
+    color : white; /* 글꼴 색상 */
+    padding: 15px;  /* 안쪽 여백 */
+}
+
+#side_bar li{
+    padding: 12px ; /* 안쪽 여백 */
+    border-bottom: 2px solid #eeeeee ; /* 아래쪽 테두리 : #색상코드 #eeeeee : 밝은회색 헥스코드 */
+}
+
+#main_content{
+    width: 1040px; /* 부모 1280px 중에 사용할 사이즈*/
+    margin-left: 30px; /* 왼쪽 바깥여백 */
+}
+
+#main_content h3{
+    font-size: 20px; 
+    border-bottom: 2px solid #eeeeee ; /* 아래쪽 테두리 : 경계선 */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#main_bg{  width: 100%; }
+
+
+
+
+
+#footer{ background-color: aqua; }
+/* 선택자 , 선택자 : 다수 선택자 선택 */
+/* 선택자  선택자 : 자손 선택자 선택  */
+/* 선택자 > 선택자 : 자식 선택자 선택 */
+
+/* 푸터 */
+#footer{
+	background-color: #2C2A29;		/* 배경색 */
+	color:white;					/* 글꼴 색 */
+	width: 100%; height: 100px;		/* 크기 */
+	margin-top: 30px; 				/* 바깥여백 */
+}
+.ft_box{
+	width: 1200px;					/* 가로 길이 */
+	margin: 0 auto;					/* 구역 가운데 정렬 */
+	display: flex;					/* 하위 요소 배치 방법 */
+	justify-content: space-between;	/* 하위 요소 가로 정렬 */
+	align-items: center;			
+	padding: 20px;
+}
+
+.main_logo{
+	text-align: center;
+}
+
+
