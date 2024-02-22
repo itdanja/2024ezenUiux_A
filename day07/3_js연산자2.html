@@ -85,8 +85,19 @@
         document.write( 3 > 2 && 5 > 1 );   // 3>2(true) 이면서 5>1(true) 이면 결과는 true;
         document.write( !true );            // true -> false
         document.write( !false );           // false -> true
-        document.write( !(3>5) );          // 3>5(false) !부정 => true    
-
+        document.write( !(3>5) );          // 3>5(false) !부정 => true
+        
+        // 활용1) 입력받은 정수에 *3 한 결과가 100이상 200 이하 확인 
+        // 1. 입력받고 변수에 저장 
+        let 정수 = prompt('정수:');
+        // 2. 변수에 산술연산 처리 
+        let 계산식 = 정수 * 3 ;
+        // 3. 변수에 논리연산 처리 
+        // let 논리식 = 100<= 계산식 <= 200 ; // 불가능 
+        let 논리식 = 계산식>=100 && 계산식<=200 ; // 범위 논리는 AND && 
+        // 4. 결과변수를 출력
+        document.write( '<p> 활용1 결과 : ' + 논리식 );
+            
     </script>
 
 </body>
